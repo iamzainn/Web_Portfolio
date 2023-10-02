@@ -266,9 +266,23 @@ section.profile {
 }
 
 .contact {
-  background-color: #6070ff;
-  border-top-left-radius: 3.4em;
+  position: relative;
+  background-image: url('./img/Contact\ me.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 23;
   padding: 4em 3em;
+}
+
+.contact::after {
+  position: absolute;
+  content: '';
+  inset: 0;
+  top: 10;
+  opacity: 0.6;
+  z-index: -1;
+  background-size: cover;
+  background-image: url('/img/contact\ form\ shapes-mobile@2x.png');
 }
 
 .contact .ContactForm {
