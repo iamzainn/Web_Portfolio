@@ -10,7 +10,6 @@
 
 body {
   font-family: 'Poppins', sans-serif;
- 
 }
 
 img {
@@ -27,7 +26,6 @@ nav {
   display: flex;
   align-items: center;
   padding: 0.3em 0.7em;
-  
   justify-content: space-between;
 }
 
@@ -40,24 +38,21 @@ nav .logo {
 nav .hamburgerIcon {
   display: flex;
   align-items: center;
-  display: block;
-}
-.profileSect {
-  background-image: url('./img/header-shapes\ mobile.png');
-  background-repeat:no-repeat;
-  background-size: cover;
-  background-position: center;
-  
 }
 
-.profileSect .profile{
+.profileSect {
+  background-image: url('./img/header-shapes\ mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.profileSect .profile {
   display: flex;
   padding: 7.125em 1.5em;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.75rem;
- 
-  
 }
 
 .profile .name {
@@ -94,7 +89,6 @@ nav .hamburgerIcon {
   padding: 7.125rem 1.5rem;
   align-items: center;
   gap: 5.5rem;
-  
 }
 
 .main > * {
@@ -107,17 +101,18 @@ nav .hamburgerIcon {
   align-items: center;
   gap: 0.75rem;
 }
-.main > * >div.img{
+
+.main > * > div.img {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.mainSpecs{
+
+.mainSpecs {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.75rem;
- 
 }
 
 .mainSpecs .heading {
@@ -380,71 +375,63 @@ nav .hamburgerIcon {
   border-radius: 10px;
   background: #0d151e;
 }
-.unorderList{
- 
+
+.unorderList {
   display: none;
-  
 }
-.unorderList li{
+
+.unorderList li {
   list-style: none;
 }
-.unorderList li a{
+
+.unorderList li a {
   cursor: pointer;
   text-decoration: none;
   color: #344563;
   font-size: 0.938rem;
-font-style: normal;
-font-weight: 500;
-line-height: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
 }
 
-
-@media (min-width:768px){
-  nav{
-  
-   padding: 2em 8.9375em;
+@media (min-width: 768px) {
+  nav {
+    padding: 2em 8.9375em;
   }
-  
-  .unorderList{
+
+  .unorderList {
     display: flex;
     gap: 0.625rem;
-  align-items: center;
-  
+    align-items: center;
   }
-  
- 
+
   nav .hamburgerIcon {
     display: none;
   }
-  .profileSect{
+
+  .profileSect {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 18.063em calc(10vw + 4em);
     background-image: url('./img/Header\ bg.svg');
-
   }
-  .main{
+
+  .main {
     padding: 8.875em;
     gap: 8.875em;
   }
+
   .main > * {
     flex-direction: row;
     gap: 1rem;
-   
   }
-  
-  .main > * >*{
-    flex: 1;
-   
-  }
-  
-  .mainThree > .mainSpecs{
-    order: -1;
-    
-  }
-  
- 
- 
 
+  .main > * > * {
+    flex: 1;
+  }
+
+  .mainThree > .mainSpecs {
+    order: -1;
+  }
 }
