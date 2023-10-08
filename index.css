@@ -8,6 +8,10 @@
   padding: 0;
 }
 
+html {
+  font-size: 14px;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
 }
@@ -189,7 +193,7 @@ nav .hamburgerIcon {
   border: 1px solid  #6070ff;
 }
 
-.self {
+.selfSect {
   display: flex;
   background-color: white;
   padding: 7.125rem 1.5rem;
@@ -197,6 +201,10 @@ nav .hamburgerIcon {
   align-items: center;
   gap: 1.5rem;
   border-top-right-radius: 3em;
+}
+
+.selfSect > * {
+  flex: 1;
 }
 
 .self .selfdDisplay {
@@ -283,22 +291,25 @@ nav .hamburgerIcon {
 
 .contact {
   position: relative;
+  padding: 4em 3em;
   background-image: url('./img/Contact\ me.png');
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: 23;
-  padding: 4em 3em;
 }
 
 .contact::after {
+  content: "";
   position: absolute;
-  content: '';
-  inset: 0;
-  top: 10;
-  opacity: 0.6;
-  z-index: -1;
+  top: 0%;
+  right: 0;
+  bottom: 0;
+  left: 40%;
+  background-image: url('./img/contact\ form\ shapes-mobile@2x.png');
+  background-position: center;
   background-size: cover;
-  background-image: url('/img/contact\ form\ shapes-mobile@2x.png');
+  background-repeat: no-repeat;
+  opacity: 1;
 }
 
 .contact .ContactForm {
@@ -343,7 +354,7 @@ nav .hamburgerIcon {
 
 .form input {
   padding: 0.48em 0.3em;
-  border-radius: 8px;
+  border-radius: 3px;
   border: 1px solid #cfd8dc;
   background: #fff;
 }
@@ -351,7 +362,7 @@ nav .hamburgerIcon {
 .form textarea {
   padding: 0.3em;
   resize: none;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 .form input[type='button'] {
@@ -395,6 +406,10 @@ nav .hamburgerIcon {
 }
 
 @media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
   nav {
     padding: 2em 8.9375em;
   }
@@ -433,5 +448,51 @@ nav .hamburgerIcon {
 
   .mainThree > .mainSpecs {
     order: -1;
+  }
+
+  .selfSect {
+    background-image: url('./img/about\ myself\ -\ background-\ shape-\ desktop.png');
+    padding: calc(4.875em + 4vw);
+    flex-direction: row;
+  }
+
+  .skills {
+    align-items: flex-start;
+  }
+
+  .langDisplay {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .langDisplay > * {
+    flex-direction: column;
+    align-self: stretch;
+  }
+
+  .langDisplay > * > * {
+    align-self: flex-start;
+  }
+
+  .contact {
+    padding: 8em calc(18vw + 4.5em);
+    z-index: 1;
+    background-image: url('/img/contact\ form-\ background-shape-desktop.svg');
+  }
+
+  .contact::after {
+    top: 0%;
+    left: 0;
+    z-index: -1;
+    background-image: url('/img/contact\ form\ background\ shapes@2x.png');
+  }
+
+  .form input[type='button'] {
+    align-self: center;
+  }
+
+  .shape {
+    display: none;
   }
 }
