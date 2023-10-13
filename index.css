@@ -46,7 +46,7 @@ nav .hamburgerIcon {
 }
 
 .profileSect {
-  background-image: url('./img/header-shapes\ mobile.png');
+  background-image: url('./assets/images/header-shapes\ mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -293,7 +293,7 @@ nav .hamburgerIcon {
 .contact {
   position: relative;
   padding: 4em 3em;
-  background-image: url('./img/Contact\ me.png');
+  background-image: url('./assets/images/Contact\ me.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -306,7 +306,7 @@ nav .hamburgerIcon {
   right: 0;
   bottom: 0;
   left: 40%;
-  background-image: url('./img/contact\ form\ shapes-mobile@2x.png');
+  background-image: url('./assets/images/contact\ form\ shapes-mobile@2x.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -430,7 +430,7 @@ nav .hamburgerIcon {
     align-items: center;
     justify-content: center;
     padding: 18.063em calc(10vw + 4em);
-    background-image: url('./img/Header\ bg.svg');
+    background-image: url('./assets/images/Header\ bg.svg');
   }
 
   .main {
@@ -452,7 +452,7 @@ nav .hamburgerIcon {
   }
 
   .selfSect {
-    background-image: url('./img/about\ myself\ -\ background-\ shape-\ desktop.png');
+    background-image: url('./assets/images/about\ myself\ -\ background-\ shape-\ desktop.png');
     padding: calc(4.875em + 4vw);
     flex-direction: row;
   }
@@ -479,14 +479,14 @@ nav .hamburgerIcon {
   .contact {
     padding: 8em calc(18vw + 4.5em);
     z-index: 1;
-    background-image: url('/img/contact\ form-\ background-shape-desktop.svg');
+    background-image: url('./assets/images/contact\ form-\ background-shape-desktop.svg');
   }
 
   .contact::after {
     top: 0%;
     left: 0;
     z-index: -1;
-    background-image: url('/img/contact\ form\ background\ shapes@2x.png');
+    background-image: url('/assets/images/contact\ form\ background\ shapes@2x.png');
   }
 
   .form input[type='button'] {
